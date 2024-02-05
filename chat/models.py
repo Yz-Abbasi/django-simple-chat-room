@@ -7,7 +7,7 @@ class Room(models.Model):
 
 
 class Message(models.Model):
-    msg = models.CharField(max_length=1000000)
-    date = models.DateTimeField(default=datetime.now, blank=False)
+    value = models.CharField(max_length=1000000)
+    date = models.DateTimeField(default=datetime.now, blank=True)
     user = models.CharField(max_length=50)
     room = models.CharField(max_length=600)
